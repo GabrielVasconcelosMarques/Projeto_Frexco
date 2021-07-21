@@ -19,7 +19,7 @@ module.exports = {
         const { page } = req.query;
 
         // definindo que apareçam 15 produtos por página
-        const produtos = await Produto.paginate({}, { page, limit: 15 });
+        const produtos = await Produto.paginate({}, { page, limit: 12 });
         return res.json(produtos);
     },
 
